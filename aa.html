@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style >
+    
+ 
+ body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hotpink;  
+ }
+
+ .card{
+
+  position: relative;
+  width: 200px;
+  height: 190px;
+  background: purple;
+  
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 0.5s;
+
+ }
+
+ .card:hover{
+  transform: translateX(50%);
+ }
+ .card .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+
+ }
+ .content{
+  background: purple;
+  
+ }
+
+ .img{
+
+  height: 100%;
+
+
+
+  width: 100%;
+  height: 100%;
+z-index: 1;
+transform-style: preserve-3d;
+  position: relative  ;
+  transition: 0.5s ease-in-out;
+  transform-origin: left;
+
+ }
+.card:hover .img{
+  transform: rotateY(-180deg);
+}
+
+
+
+.img img{
+  background-size: cover;
+  position: absolute;
+  background: mediumbluee;
+ height: 100%;
+ backface-visibility: hidden;
+object-fit: cover;
+   width: 100%;
+}
+
+
+.img img:nth-child(2){
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+  
+
+  <h1> Bmw  </h1>
+
+<div class="card">
+
+
+  <div class="img" > 
+      
+      <img src="44.jpg">
+      <img src="33.jpg">
+
+    </div>
+
+
+
+
+
+
+  <div class="details ">
+
+
+    <div class="content">
+
+      <h2> Bmw Jrbs </h2>
+      
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
